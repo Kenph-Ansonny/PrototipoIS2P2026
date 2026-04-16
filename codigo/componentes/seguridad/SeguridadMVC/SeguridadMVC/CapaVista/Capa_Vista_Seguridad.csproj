@@ -62,6 +62,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Frm_Cines_ExamenParcial2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Cines_ExamenParcial2.Designer.cs">
+      <DependentUpon>Frm_Cines_ExamenParcial2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Frm_EmpleadosV2.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -242,8 +248,17 @@
       <DependentUpon>Reporte_usuario.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Rpt_Cines.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Rpt_Cines.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Frm_Cines_ExamenParcial2.resx">
+      <DependentUpon>Frm_Cines_ExamenParcial2.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Frm_EmpleadosV2.resx">
       <DependentUpon>Frm_EmpleadosV2.cs</DependentUpon>
     </EmbeddedResource>
@@ -340,6 +355,10 @@
     <EmbeddedResource Include="Reporte_usuario.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>Reporte_usuario.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rpt_Cines.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Rpt_Cines.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
