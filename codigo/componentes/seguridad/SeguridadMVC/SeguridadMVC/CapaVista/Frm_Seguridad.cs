@@ -419,5 +419,11 @@ namespace Capa_Vista_Seguridad
             frm.MdiParent = this;
             frm.Show();
         }
+
+        private void cinesExamenToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Frm_Cines_ExamenParcial2 Cine = new Frm_Cines_ExamenParcial2();
+            Cine.ShowDialog();
+        }
     }
 }
